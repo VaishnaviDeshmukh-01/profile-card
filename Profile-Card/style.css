@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f4f6;
+    padding: 20px;
+    transition: background 0.4s;
+}
+
+.card {
+    width: 100%;
+    max-width: 360px;
+    padding: 40px 28px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 28px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    background: #f1f1f1;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #1f2937;
+}
+
+.card.dark-mode {
+    background: #111827;
+    color: #f1f5f9;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.card.dark-mode h2 {
+    color: #f1f5f9;
+}
+
+.card.dark-mode p {
+    color: #9ca3af;
+}
+
+.card.dark-mode .skill {
+    background: #334155;
+    color: #60a5fa;
+}
+
+.card.dark-mode .btn-primary {
+    background: #3b82f6;
+}
+
+.card.dark-mode .btn-secondary {
+    background: #475569;
+    color: #e2e8f0;
+}
+
+.card.dark-mode .like-btn {
+    background: #f87171;
+}
+
+.card.dark-mode img {
+    border-color: #475569;
+}
+
+img {
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    border: 5px solid #e0f2fe;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.skill {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media (min-width: 480px) {
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .buttons button {
+        flex: 1;
+        max-width: 170px;
+    }
+}
+
+button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-secondary {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.like-btn {
+    background: #ef4444;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
